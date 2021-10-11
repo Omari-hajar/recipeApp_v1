@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:text="recipe"/>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e3e3e3e3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvQuestion"/>
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+
+        android:text="recipe"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/clExpand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:textSize="15sp"
+
+            android:text="Ingredients"/>
+
+        <TextView
+            android:id="@+id/tvIng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+
+            android:text="this is a sample text for the answer box"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvInst" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:textSize="15sp"
+
+            android:text="Instructions"/>
+
+        <TextView
+            android:id="@+id/tvInst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="this is a sample text for the answer box"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3e3e3e3"
+        app:layout_constraintBottom_toBottomOf="@+id/tvQuestion"/>
+
+
+
+</androidx.cardview.widget.CardView>
